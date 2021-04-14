@@ -1,0 +1,94 @@
+.app-lane {
+    background-color: #ebecf0;
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    border-radius: 8px;
+    max-width: 300px;
+    width: 300px;
+    min-width: 300px;
+    -webkit-box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.5);
+    height: fit-content;
+    transition-property: height;
+    transition-duration: 30s;
+    transition-timing-function: ease-in;
+}
+
+.app-lane:hover {
+    -webkit-box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.75);
+}
+
+.app-lane--header--static,
+.app-lane--header {
+    display: flex;
+    padding: 8px;
+    min-height: 45px;
+    max-height: 45px;
+    justify-content: center;
+}
+
+.app-lane--body {
+    overflow: auto;
+    height: min-content;
+    max-height: 25vh;
+    min-height: 50px;
+    -webkit-box-shadow: inset 0 0 15px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0 0 15px -12px rgba(0,0,0,0.75);
+    box-shadow: inset 0 0 15px -12px rgba(0,0,0,0.75);
+}
+
+.app-lane--footer {
+    margin: 8px 16px;
+}
+
+.app-lane--icon {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(0,0,0, 0.25);
+    justify-content: center;
+    padding: 8px;
+    margin-left: 8px;
+}
+.app-lane--header--static .app-lane--icon:hover {
+    cursor: default;
+}
+
+.app-lane--header .app-lane--icon:hover {
+    color: rgba(0,0,0, 0.55);
+    cursor: pointer;
+}
+
+.app-lane--archived--blocked,
+.app-lane--archived {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 40px;
+    min-height: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+.app-lane--archived--blocked .app-lane--archived-icon,
+.app-lane--archived .app-lane--archived-icon {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(0,0,0, 0.25);
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.app-lane--archived .app-lane--archived-icon:hover {
+    color: rgba(0,0,0, 0.55);
+}
+
+.app-lane--archived--blocked .app-lane--archived-icon {
+    cursor: default;
+}
+

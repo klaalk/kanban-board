@@ -1,0 +1,12 @@
+.app-modal--footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.app-modal--error-msg {
+    color: red;
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    align-items: center;
+}

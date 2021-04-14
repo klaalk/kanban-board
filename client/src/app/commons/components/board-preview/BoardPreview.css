@@ -1,0 +1,101 @@
+.app-board-prev {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    border-radius: 16px;
+    max-width: 300px;
+    width: 300px;
+    height: 200px;
+    min-width: 300px;
+    box-shadow: 0 3px 15px -4px rgba(0,0,0,0.5);
+    max-height: 100vh;
+    min-height: 50px;
+    border: 8px solid #ebecf0;
+    cursor: default;
+}
+
+.app-board-prev:hover {
+    box-shadow: 0 3px 15px -4px rgba(0,0,0,0.7);
+}
+
+.app-board-prev--label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    padding-left: 8px;
+}
+
+.app-board-prev--header {
+    background-color: #ebecf0;
+    display: flex;
+    flex: 1 1;
+    padding-bottom: 8px;
+    min-height: 30px;
+    justify-content: center;
+}
+
+.app-board-prev--body {
+    display: flex;
+    flex: 4 1;
+    flex-direction: row;
+    overflow: auto;
+    overflow-x: hidden;
+    height: min-content;
+    background-color: rgba(0,0,0, 0.2);
+    border-radius: 0 0 8px 8px;
+    -webkit-box-shadow: inset 0px 0px 14px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 14px -6px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 14px -6px rgba(0,0,0,0.75);
+}
+
+.app-board-prev--info {
+    display: flex;
+    flex: 4 1;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 8px 8px;
+}
+
+.app-board-prev--actions {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.app-board-prev--icon-close {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(0,0,0, 0.25);
+    justify-content: center;
+    padding: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.app-board-prev--icon-close:hover {
+    color: rgba(0,0,0, 0.55);
+}
+
+.app-board-prev--icon-add-person {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(255,255,255, 0.55);
+    justify-content: center;
+    margin-left: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.app-board-prev--icon-add-person:hover {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+
+

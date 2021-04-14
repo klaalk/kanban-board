@@ -1,0 +1,60 @@
+.app-list-boards {
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app-list-boards--container {
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.app-list-boards--menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 8px;
+    max-width: 300px;
+    width: 300px;
+    min-width: 100px;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.app-list-boards--header {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(255,255,255, 0.95);
+    font-size: 20px;
+    padding: 8px 16px;
+}
+
+.app-list-boards--body {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    -webkit-box-shadow: inset 0 0 16px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0 0 16px -8px rgba(0,0,0,0.75);
+    box-shadow: inset 0 0 16px -8px rgba(0,0,0,0.75);
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    overflow: auto;
+    padding: 16px;
+    /* flex-wrap: wrap; */
+    max-height: 40vh;
+    overflow-y: hidden;
+}
+
+.app-list-boards--element {
+    display: flex;
+}
+
+

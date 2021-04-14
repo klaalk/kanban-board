@@ -1,0 +1,129 @@
+.app-card {
+    flex: 1;
+    flex-direction: column;
+}
+
+.app-card--wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.app-card--container {
+    background-color: rgba(255, 255, 255, 0.8);
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    max-width: 254px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 3px 10px -6px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 3px 10px -6px rgba(0,0,0,0.35);
+    box-shadow: 0 3px 10px -6px rgba(0,0,0,0.35);
+}
+
+.app-card--container:hover {
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 3px 10px -4px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0 3px 10px -4px rgba(0,0,0,0.55);
+    box-shadow: 0 3px 10px -4px rgba(0,0,0,0.55);
+}
+
+.app-card--header {
+    display: flex;
+    min-height: 30px;
+    max-width: 248px;
+}
+
+.app-card-body {
+    display: flex;
+    padding: 0 8px;
+    font-weight: 400;
+    font-size: 12px;
+    flex-grow: 1;
+    max-height: 50px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.app-card--title {
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    flex-grow: 1;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 236px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.app-card--description {
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    flex-grow: 1;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 236px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.app-card--static .app-card--description,
+.app-card--static .app-card--title {
+    cursor: default;
+}
+
+.app-card--icon {
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0,0,0, 0.25);
+    justify-content: center;
+    padding: 8px;
+}
+
+.app-card--container .app-card--icon {
+    display: none;
+}
+
+.app-card--container:hover .app-card--icon {
+    display: flex;
+    cursor: default;
+}
+
+.app-card--archived:not(.--static):hover .app-card--icon:hover,
+.app-card:not(.--static):hover .app-card--icon:hover {
+    color: rgba(0,0,0, 0.55);
+    cursor: pointer;
+}
+
+.app-card--arrow-icon--blocked,
+.app-card--arrow-icon {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    justify-content: center;
+    visibility: hidden;
+    color: rgba(0,0,0, 0.20);
+    cursor: default;
+}
+
+.app-card--static:not(.--archived):hover .app-card--arrow-icon:not(.--blocked),
+.app-card:not(.--archived):hover .app-card--arrow-icon:not(.--blocked) {
+    visibility: visible;
+    cursor: default;
+}
+
+.app-card:not(.--archived):not(.--static):hover .app-card--arrow-icon:not(.--blocked):hover {
+    color: rgba(0,0,0, 0.55);
+    cursor: pointer;
+}
+

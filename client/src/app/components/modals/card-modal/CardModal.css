@@ -1,0 +1,56 @@
+.app-modal-info--box {
+    display: flex;
+    padding: 8px 0;
+}
+
+.app-modal-info--label {
+    flex: 1;
+    font-weight: 500;
+}
+
+.app-modal-info--value {
+    flex: 4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.app-modal-links--container {
+    padding: 8px 0;
+}
+
+.app-modal-links--header {
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.app-modal-links--body {
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 8px;
+}
+
+.app-modal-links--input {
+    margin-top: 8px;
+    flex: 1;
+}
+
+.app-modal--footer {
+    display: flex;
+    flex: 1;
+}
+
+.app-modal--footer-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.app-modal--error-msg {
+    color: red;
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    align-items: center;
+}

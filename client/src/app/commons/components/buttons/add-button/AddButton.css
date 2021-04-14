@@ -1,0 +1,51 @@
+.app-add-button {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    height: 100%;
+    min-height: 40px;
+    cursor: pointer;
+    border: 2px solid rgba(235, 236, 240, 0.5);
+}
+
+.app-add-button.--dark {
+    border: none;
+}
+
+.app-add-button.--disabled {
+    cursor: default;
+}
+
+.app-add-button--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.app-add-button--icon {
+    display: flex;
+    font-size: 30px;
+    color: rgba(235, 236, 240, 0.5);
+}
+
+.app-add-button--icon.--dark {
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.app-add-button:hover:not(.--disabled) {
+    border: 2px solid rgba(235, 236, 240, 0.9);
+}
+
+.app-add-button:hover.--dark:not(.--disabled) {
+    border: none;
+}
+
+.app-add-button:hover:not(.--disabled) .app-add-button--icon {
+    color: rgba(235, 236, 240, 0.9);
+}
+
+.app-add-button:hover.--dark:not(.--disabled) .app-add-button--icon.--dark {
+    color: rgba(0, 0, 0, 0.55);
+}
